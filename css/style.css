@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {font-family: SFU; src: url(../fonts/SFUDinEngAlt.TTF)}
+@font-face {font-family: SFUHev; src:url(../fonts/SFUHelveticaNeueUltraLight.TTF)}
+@font-face {font-family: SFUHevNorm; src: url(../fonts/SFUHelveticaNeue.ttf)}
+
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('../fonts/HelveticaNeue.eot');
+	src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeue.woff2') format('woff2'),
+		url('../fonts/HelveticaNeue.woff') format('woff'),
+		url('../fonts/HelveticaNeue.ttf') format('truetype'),
+		url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body { 
+	font-family: 'Helvetica Neue';
+	padding: 0;
+	background: #000}
+
+.bigbox {
+	min-height:600px;
+	background: #333;
+}
+
+/*cover*/
+#section1{
+ 	position: relative;
+}
+#section1 #img-cover {position: absolute; z-index:5; }
+#section1 #btn-cover {position: absolute; left:55%; top: 74%; z-index:10;transition: all ease-in-out 0.1s}
+#section1 #btn-cover:hover {transform:scale(1.1)}
+#section1 #btn-cover:active {transform:scale(0.9)}
+
+
+/*about us*/
+#section2{
+  background-color: #545251;
+  background-image: -webkit-linear-gradient(160deg, #545251 45%, #0b0b0b 45%);
+  /*https://codepen.io/PositionRelativ/pen/Ichrg*/
+  min-height: 730px;
+}
+
+/*speaker*/
+#section3 {
+	min-height:800px;
+	background: #0b0b0b url(../image/v-bg.png);
+	background-position: center left;
+	background-repeat: no-repeat no-repeat;
+	padding: 0;
+	margin: 0;
+}
+
+#slideshow {
+	position: relative}
+
+
+/*program*/
+#section4 {
+	background-color: #545251;
+  	background: url(../image/section4.png) right no-repeat ;
+	min-height:768px;
+	
+	padding: 0;
+	margin: 0;
+}
+
+#section4 table td {
+	font-size:22px;
+	padding: 5px 20px;
+	color:#eee;
+}
+
+#section4 .table-border-left {
+	border-left: solid 0.1px #333;
+	padding-left: 30px;
+	margin-left: 5px
+}
+
+.table-border-left0 {padding-right: 25px !important}
+#section4 table {background:rgba(0,0,0,0.3);border-radius: 10px; }
+
+
+/*subcriber*/
+#section5 {
+	
+	background-image:url(../image/bg-subcribe.jpg);
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+	
+}
+#section5 #form {}
+
+#section5a {position: fixed; display:none; top: 0px; left: 0px; z-index:10000;}
+
+#section5 h2 {color: white;}
+#section5 h3 {color: white;}
+#section5 p {font-size:16px;}
+#section5 label {color:white; padding: 10px 0 10px 0; font-size:16px; font-family: SFUHevNorm}
+#section5 input[type="text"] {color:white; padding: 20px 0 0 0; border:none; border-bottom:#333 1px solid; width:100%; background:#000; font-size: 16px; font-family: SFUHevNorm}
+#section5 input[type="number"] {color:white; padding: 20px 0 0 0; border:none; border-bottom:#333 1px solid; width:100%; background:#000; font-size: 16px; font-family: SFUHevNorm}
+#section5 input[type="email"] {color:white; padding: 20px 0 0 0; border:none; border-bottom:#333 1px solid; width:100%; background:#000; font-size: 16px; font-family: SFUHevNorm}
+#section5 input[type="radio"] {font-size:16px; background: #cbd1d8;}
+#section5 select {margin-top:1px; width: 100%; border: white 2px solid; background:#333; color: white; padding: 10px 0;}
+#section5 textarea {color:white; border:none; border-bottom:#333 1px solid; width:100%; background:#000; font-size: 16px; font-family: SFUHevNorm; padding:0; text-align:left}
+
+
+
+
+/*building*/
+#section6 {
+	
+}
+
+/*google map*/
+#section7 {
+	min-height:300px;
+	background: #222;
+	padding: 0;
+	margin: 0;
+}
+
+#section8 {
+	min-height:400px;
+	background: #c3cbce;
+	padding: 0;
+	margin: 0;
+}
+
+
+.section4-program {
+	border-left: 1px #CCC dashed ;
+	color: white;
+	padding: 20px;
+}
+
+.list-program {
+	margin-left: -30px}
+	
+.section-title {
+	color: white;
+	font-size:50px;
+	font-family: "SFU";
+}
+
+#side_prev, #side_next, #btn-clip {transition: 0.1s ease-in-out all}
+#side_prev:hover, #side_next:hover, #btn-clip:hover {transform:scale(1.1); border: 1px solid white}
+ #side_prev:active, #side_next:active, #btn-clip:active {transform:scale(0.9)}
+ 
+#btn-subcribe-follow  {transition:0.1s ease-in-out all}
+#btn-subcribe-follow:hover  {transform:scale(1.1)}
+#btn-subcribe-follow:active {transform:scale(0.9)}
+
+#side_prev {
+	left: -75px;
+	position: absolute;
+	width: 52px; height: 31px;
+}
+
+#side_next {
+	right: -75px;
+	position: absolute;
+	width: 52px; height: 31px;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 90; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+ }
+ 
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.babox {
+	
+	color:white; 
+	
+	display:block; 
+	padding: 40px; 
+	text-align:center;
+	
+}
+
+.baboxnoidung {
+	border:4px solid #104c4c;
+	padding: 20px 10px;
+	min-height:280px;
+	margin: auto;
+	cursor:pointer;
+
+	
+}
+
+#speaker-above {}
+
+
+.babox h1 {background:url(../image/line-below.png) no-repeat bottom; margin-top:0px; padding-bottom:10px}
+
+
+.babox p { text-align:left;font-size:18px; display: none;}
+.baboxnoidung:hover {background: rgba(0,0,0,0.8); padding: 30px;}
+.baboxnoidung:hover > p {display:block; }
+.baboxnoidung:hover > h3 {display:none}
+
+.babox2 {
+	
+	color:white; 
+	display:block; 
+	padding-top:20px;
+	padding-bottom:20px;
+	background-image:url(../image/speaker-bg-04.jpg);
+	background-repeat: repeat-x;
+    background-size:cover;
+    background-position:center;
+	padding-left:40px;
+	padding-right:40px;
+}
+
+#section2b {
+	min-height:400px;
+	background: #000;
+	padding-bottom:0px;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.dialog{
+	position:absolute;
+	width:500px;
+	left:calc(50% - 250px);
+	min-height:300px;
+	padding:10px;
+	margin:auto;
+	text-align:center;
+	top:calc(50% - 150px);
+	z-index:999;
+	color:white;
+	background:url('../image/subcribe-sucess.jpg');
+	background-position: top;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#dong{
+	left: calc(50% + 250px - 30px);
+    top: calc(50% - 150px);
+    position: absolute;
+    z-index: 999;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+.closed{
+		width:40px;
+		height:40px;
+		border-radius:15px;
+		position:absolute;
+		top:0px;
+		right:0px;
+		color:red;
+	}
+
+#bgdlg{
+	position:fixed;
+	background:url('../image/speaker-bg-01.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	z-index:99;
+	height:100%;
+}
+
+#section2b{
+	background-image:url(../image/bg.jpg);
+	background-repeat: none;
+    background-size:cover;
+    background-position:center;
+}
+.bx-wrapper .bx-controls-direction a{
+	z-index:70 !important;
+}
+
+.bx-wrapper .bx-controls-direction a{
+	z-index:70 !important;
+}
+.box_detail {
+    border: 4px solid #104c4c;
+    padding: 20px;
+    margin: auto;
+
+
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.caption1{
+	margin-top:20px;
+}
+
+.captiontitle{
+	color:white; text-align:center;  font-family:SFU; font-size:30px; margin:0 auto;
+}
+
+.captioncontain{
+	color:white; text-align:center;  font-family:SFU; font-size:20px; margin:0 auto;
+	min-height:75px;
+}
+
+#section3 p{
+	font-size:20px !important;
+}
+
+.active-slide .slidehover{
+	width:100%;
+	height:100%;
+	-webkit-box-shadow: 18px -18px 0px 0px rgba(9,76,73,1);
+-moz-box-shadow: 18px -18px 0px 0px rgba(9,76,73,1);
+box-shadow: 18px -18px 0px 0px rgba(9,76,73,1);
+}
+
+.slide{
+	margin-top:18px;
+}

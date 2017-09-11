@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Romano Khởi Thuật</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"/>
+<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+<script type="text/javascript" src="js/wow.js"></script>
+<script>  new WOW().init();  </script>
+</head>
+
+<body>
+<!-- Dialog -->
+<div id="bgdlg" style="display: none;">
+<div class="dialog">
+</div>
+<div class="close" id="dong">X</div>
+</div>
+
+
+<div id="loadingpanel" style="display: none;position: fixed;width: 100%;height: 100%;background: rgba(0,0,0,0.5);z-index: 99;text-align: center;">
+<img src="image/ripple.svg">
+</div>
+
+
+<section id="section1" >
+	<img style="width:100%;" src="image/section1-cover.jpg" />
+    
+    <img style="cursor:pointer" class="wow zoomInRight" id="btn-cover" src="image/cover-button-ok.png" />
+    
+</section>
+<!--
+<div style="min-height: 1px; background: white"></div>-->
+<!--section 2: about us-->
+<section id="section2" >
+	<div class="container">
+     
+    	<div class="row">
+    	<div class="col-lg-5 ">
+        <h1 class="section-title wow" style="margin-top:200px">GIỚI THIỆU</h1><br />
+		<!--
+        <p style="color:#eee; font-size:20px" class="wow fadeIn" data-wow-delay="1s"><b>Khám Phá Nghệ Thuật Của Sự Khởi Đầu</b></p>-->
+        <p style="color:#eee; font-size:18px;text-align:justify;margin-right:70px;"  class="wow fadeIn" data-wow-delay="1s">Hành trình vạn dặm đến thành công bắt đầu bằng từng bước, nhưng đôi khi chúng ta mãi không thể khởi hành vì không biết cách đặt bước đầu tiên.<br><br>Khám phá nghệ thuật của sự khởi đầu và làm chủ thành công trước tuổi 30 tại sự kiện ROMANO – KHỞI THUẬT.<p>
+		<!--
+<p style="color:#eee; font-size:22px"  class="wow fadeIn" data-wow-delay="1s"><i class="fa  fa-caret-right" style="color:#104c4c"></i>&nbsp; Hãy đăng ký tham gia ngay để trở thành 1 trong 100 người vinh dự được lựa chọn tham dự sự kiện.</p>-->
+   </div>
+        
+        <div class="col-lg-7">
+        		<div id="about-clip" style="margin-top: 200px; " class="videoWrapper">
+        		<iframe width="100%"  src="https://www.youtube.com/embed/LYO4yORUbbY?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            	</div>
+        </div>
+    	</div>
+    </div>
+</section>
+<!--section 2b: 3 columns-->
+<section id="section2b" >
+    <div class="container">
+        <h1 class="section-title wow " style="margin-top:30px;margin-bottom: 15px;">NỘI DUNG SỰ KIỆN</h1>
+    </div>
+	<div class="container-fluid">
+    	<div class="row" id="speaker-above">
+        	<div class="col-md-4 babox" style="background:url('image/1.jpg');background-size:cover;">
+            	<div class="col-md-12 baboxnoidung ">
+            	<h1 style="font-family:SFU;">CHỦ ĐỀ ĐẶC SẮC</h1> 
+                <h3 style="font-family:'Helvetica Neue'">Câu chuyện thành công của những doanh nhân trẻ</h3>
+                <p style="font-family:'Helvetica Neue';text-align:justify;">Lắng nghe câu chuyện thành công, những cơ hội và thách thức của ngành nghề mà bạn đang quan tâm</p>
+                </div> 
+            </div>
+            <div class="col-md-4 babox" style="background:url('image/2.jpg');background-size:cover;">
+            	<div class="col-md-12 baboxnoidung">
+            	<h1 style="font-family:SFU;">DIỄN GIẢ HÀNG ĐẦU</h1>
+                <h3 style="font-family:'Helvetica Neue'">Những chuyên gia hàng đầu trong ngành</h3>
+                <p style="font-family:'Helvetica Neue';text-align:justify;">Gặp những chuyên gia hàng đầu trong ngành. Cùng chia sẻ và trao đổi những kinh nghiệm, lời khuyên qua những câu chuyện thực tế của chính họ</p>  
+                </div>
+            </div>
+            <div class="col-md-4 babox" style="background:url('image/3.jpg');background-size:cover;">
+            	<div class="col-md-12 baboxnoidung ">
+            	<h1 style="font-family:SFU;">KẾT NỐI ĐAM MÊ</h1>  
+                <h3 style="font-family:'Helvetica Neue'">Gặp gỡ những người cùng chí hướng</h3>
+                <p style="font-family:'Helvetica Neue';text-align:justify;">Gặp những người cùng đam mê, khát vọng khởi nghiệp, mang đến cho bạn nguồn cảm hứng mới và cơ hội mở rộng mối quan hệ</p>
+                </div>
+            </div>
+        </div>
+		<div class="row">
+		<div class="col-md-12 babox2">
+               <div class="col-lg-12 box_detail">
+                <h1 style="font-family:SFU; text-align:center; background:url(image/line-below.png) no-repeat bottom; padding-bottom:20px">ĐỐI THOẠI CHUYÊN GIA</h1>
+                <p style="font-size:18px">Chúng tôi tạo điều kiện để bạn có cơ hội gặp gỡ và trò chuyện trực tiếp cùng diễn giả hay cố vấn bạn yêu thích. Bạn có thể trao đổi với họ những vấn đề riêng của doanh nghiệp và học hỏi những bài học dẫn lối thành công quý giá.</p>
+<!--
+				<p style="color:#eee; font-size:18px"  class="wow fadeIn" data-wow-delay="1s"><i class="fa  fa-caret-right" style="color:#104c4c"></i>&nbsp; <b>Hãy đăng ký tham gia và để lại câu hỏi cho diễn giả, cố vấn bạn yêu thích, chúng tôi sẽ đặt lịch hẹn giúp bạn. Cơ hội chỉ dành cho 15 người may mắn được chọn thông qua các câu hỏi thú vị bạn đã đưa ra.</b></p>-->
+        	</div>
+        	</div>
+			</div>
+        
+    </div>
+</section>
+
+
+<!--section 3: speaker slider-->
+<section id="section3" >
+	<div class="container">
+    <h1 class="section-title wow" style="margin-top:120px">DIỄN GIẢ</h1>
+    	<div class="col-lg-12">
+       		<div style="margin:auto; display:block; margin-top: 50px" class="col-lg-12">
+        		<div class="slider1" >
+                    <div class="slide">
+					<div class="slidehover">
+                        <img src="image/3_b.png" title="" /></div>
+						<div class="caption1"> 
+							<h3 class="captiontitle" >HỒ VIỆT HẢI</h3>
+							<p class="captioncontain">FOUNDER - CEO TRIIP.ME</p>   
+					  </div>
+                    </div>
+                    <div class="slide">
+						<div class="slidehover">
+                        <img src="image/3_a.png" /></div>
+						<div class="caption1"> 
+							<h3 class="captiontitle" >LÊ QUỐC VINH</h3>
+							<p class="captioncontain">CHAIRMAN - CEO LE GROUP OF COMPANIES</p>   
+					  </div>
+                    </div>
+                    <div class="slide">
+						<div class="slidehover">
+                        <img src="image/3_c.png" title="" /></div>
+						<div class="caption1"> 
+							<h3 class="captiontitle" >TRẦN VŨ NGUYÊN</h3>
+							<p class="captioncontain">CEO ĐÀ NẴNG BUSINESS INCUBATOR CHAIRMAN FLYING FISH INVESTMENT</p>   
+					  </div>
+                    </div>
+					<div class="slide">
+					<div class="slidehover">
+                        <img src="image/3_d.png" title="" /></div>
+						<div class="caption1"> 
+							<h3 class="captiontitle" >TẠ MINH TUẤN</h3>
+							<p class="captioncontain">FORBES ASIA 30 UNDER 30<br>FOUNDER YUP INSTITUTE</p>   
+					  </div>
+                    </div>
+					<div class="slide">
+					<div class="slidehover">
+                        <img src="image/3_e.png" title="" />
+						</div>
+						<div class="caption1"> 
+							<h3 class="captiontitle" >ĐINH NHẬT NAM</h3>
+							<p class="captioncontain">FORBES VIETNAM 30 UNDER 30<br>FOUNDER URBAN STATION</p> 						
+					  </div>
+                    </div>
+					<div class="slide">
+					<div class="slidehover">
+                        <img src="image/3_f.png" title="" /></div>
+						<div class="caption1"> 
+							<h3 class="captiontitle" >HÀ ANH TUẤN</h3>
+							<p class="captioncontain">CHAIRMAN OF THE BOARD MEMBERS</p>   
+					  </div>
+                    </div>
+				</div>
+     		</div>
+      	</div>
+      	
+	 </div>
+	<script>
+	   
+	</script>
+</section>
+
+<!--section 4" program event flow-->
+<section id="section4" >
+	<div class="container">
+    <h1 class="section-title wow" style="margin-top:150px">CHƯƠNG TRÌNH SỰ KIỆN</h1>
+    <br />
+    <table class="wow fadeIn" data-wow-delay="1s" style="font-family:'Helvetica Neue'">
+    	<tr >
+        	<td style="position:relative" class="table-border-left0">	17:30
+            	<i style="position:absolute; left:96%; top: 45%; font-size: 10px" class="fa fa-circle"></i>
+            </td>
+			
+            <td class="table-border-left">Đón khách</td>
+        </tr>
+        <tr style="position:relative">
+        	<td></td>
+            
+            <td class="table-border-left">Tiệc trà & networking</td>
+        </tr>
+        
+        <tr>
+        	<td style="position:relative" class="table-border-left0">	17:40
+            	<i style="position:absolute; left:96%; top: 45%; font-size: 10px" class="fa fa-circle"></i>
+			</td>
+            <td class="table-border-left">Gặp gỡ cố vấn</td>
+        </tr>
+        
+        <tr>
+        	<td style="position:relative" class="table-border-left0">	18:30
+            	<i style="position:absolute; left:96%; top: 45%; font-size: 10px" class="fa fa-circle"></i>
+			</td>
+            <td class="table-border-left">Talkshow</td>
+        </tr>
+        <tr>
+        	<td style="position:relative" class="table-border-left0">	18:45
+            	<i style="position:absolute; left:96%; top: 45%; font-size: 10px" class="fa fa-circle"></i>
+			</td>
+            <td class="table-border-left">Phiên thảo luận 1<br>Làm chủ hình ảnh bản thân</td>
+        </tr>
+        <tr>
+        	<td style="position:relative" class="table-border-left0">	18:45
+            	<i style="position:absolute; left:96%; top: 45%; font-size: 10px" class="fa fa-circle"></i>
+			</td>
+            <td class="table-border-left">Phiên thảo luận 2<br>Làm chủ tư duy</td>
+        </tr>
+        <tr>
+        	<td style="position:relative" class="table-border-left0">	18:45
+            	<i style="position:absolute; left:96%; top: 45%; font-size: 10px" class="fa fa-circle"></i>
+			</td>
+            <td class="table-border-left">Phiên thảo luận 3<br>Làm chủ đam mê</td>
+        </tr>		
+        <tr>
+        	<td style="position:relative" class="table-border-left0">	20:40
+            	<i style="position:absolute; left:96%; top: 45%; font-size: 10px" class="fa fa-circle"></i>
+			</td>
+            <td class="table-border-left">Kết thúc sự kiện</td>
+        </tr>
+    </table>
+   
+    </div>
+</section>
+
+<!--popup hinh anh hien len khi bam nut send-->
+<section id="section5a" class="modalhai">
+	<img src="image/section2-clip.jpg" />
+
+</section>
+
+<!--section 5: subcribe form-->
+<section id="section5" class="modal"  >
+	<span class="close" style="color:white"><i class="fa fa-3x fa-close"></i></span>
+	<div class="container" id="form">
+    <div class="col-lg-10 col-lg-offset-1" style="background: rgba(0,0,0,0.8);padding: 0px 70px;">
+	<h1 class="section-title" style="margin-top:75px; text-align:center">ĐĂNG KÝ THAM GIA</h1>
+ 
+    <form id="form-dang-ky">
+    <div class="row">
+    	<div class="col-lg-2">
+        	<label for="id-name">Họ tên</label>
+        </div>
+        <div class="col-lg-4">
+        	<input id="id-name" type="text" name="ten" placeholder="" required />
+        </div>
+        <!--
+        <div class="col-lg-2">
+        	<label>Giới tính:</label>
+        </div>
+        <div class="col-lg-2">
+        	<input id="id-gender-male" type="radio" name="gioitinh" value="nam" required/> &nbsp; <label for="id-gender-male" >Nam</label>
+        </div>
+        <div class="col-lg-2">
+        	<input  id="id-gender-female" type="radio" name="gioitinh" value="nu" required /> &nbsp; <label for="id-gender-female">Nữ</label>
+        </div>-->
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-2">
+        	<label for="id-age">Tuổi</label>
+        </div>
+        <div class="col-lg-4">
+        	<select id="id-age" name="age" required>
+            	<option value="">------------</option>
+            	<option value="18">Dưới 18</option>
+                <option value="25">18 đến 25</option>
+                <option value="30">25 đến 30</option>
+                <option value="other">Trên 30</option>
+            </select>
+        </div>
+        <div class="col-lg-3">
+        	<label for="id-mobile">Điện thoại</label>
+        </div>
+        <div class="col-lg-3">
+        	<input  id="id-mobile" type="number" name="sodienthoai" placeholder="" required />
+        </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-3">
+        	<label for="id-email">Email</label>
+        </div>
+        <div class="col-lg-9">
+        	<input  id="id-email" type="email" name="email" placeholder="" required />
+        </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-3">
+        	<label for="id-address">Địa chỉ</label>
+        </div>
+        <div class="col-lg-9">
+        	<input  id="id-address" type="text" name="address" placeholder="" required />
+        </div>
+    </div>
+
+    
+    <div class="row">
+    	<div class="col-lg-3">
+        	<label for="id-industry">Nghành nghề kinh doanh:</label>
+        </div>
+        <div class="col-lg-3">
+        	<select id="id-industry" name="industry" required>
+            	<option value="">------------</option>
+            	<option value="batdongsan">Bất động sản</option>
+                <option value="thuongmai">Thương mại/Bán lẻ/Bán sỉ</option>
+                <option value="chungkhoan">Chứng khoán</option>
+                <option value="congnghecao">Công nghệ cao/Cơ khí/IT</option>
+                <option value="duocpham">Dược phẩm/Y tế/Chăm sóc sức khoẻ</option>
+                <option value="giaoduc">Giáo dục</option>
+                <option value="hangiadung">Hàng gia dụng/Hàng tiêu dùng</option>
+                <option value="kientruc">Kiến trúc xây dựng</option>
+                <option value="mythuat">Mỹ thuật/Nghệ Thuật/Thiết kế</option>
+                <option value="nganhang">Ngân hàng</option>
+                <option value="nhahang">Nhà hàng/khách sạn</option>		
+                <option value="sanxuat">Sản xuất & chế biến</option>				
+                <option value="taichinh">Tài chính/đầu tư</option>				
+                <option value="thucpham">Thực phẩm & Đồ uống</option>				
+                <option value="truyenthong">Truyền thông/Quảng cáo</option>	
+                <option value="vienthong">Viễn thông</option>
+                <option value="nganhkhac">Khác</option>				
+				
+               
+            </select>
+        </div>
+        <div class="col-lg-3">
+        	<label for="id-title">Chức danh</label>
+        </div>
+        <div class="col-lg-3">
+        	<select id="id-title" name="title" required>
+            	<option value="">------------</option>
+            	<option value="founder">Người sáng lập</option>
+                <option value="cofounder">Đồng sáng lập</option>
+                <option value="director">Giám đốc</option>
+                <option value="manager">Quản lý</option>
+                <option value="staff">Nhân viên</option>
+                <option value="other">Khác</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-6">
+        	<label for="id-fav-mentor">Bạn muốn nói chuyện với diễn giả/cố vấn nào?</label>
+        </div>
+        <div class="col-lg-6">
+        	<select id="id-fav-mentor" required>
+            	<option value="">------------</option>
+                <option>Lê Quốc Vinh</option>
+                <option>Hồ Việt Hải</option>
+                <option>Trần Vũ Nguyên</option>
+				<option>Tạ Minh Tuấn</option>
+				<option>Đinh Nhật Nam</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-6">
+        	<label for="id-question">Câu hỏi dành cho cố vấn<br>(15 người với câu hỏi hay nhất sẽ được các cố vấn/diễn giả lựa chọn để tham gia đối thoại trực tiếp với họ)</label>
+        </div>
+        <div class="col-lg-6">
+        	<textarea name="cauhoi" rows="4" cols="5" required ></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <label for="id-linkedin">Facebook/Linkedin cá nhân</label>
+        </div>
+        <div class="col-lg-6">
+            <input id="id-linkedin" type="text" name="Facebook" placeholder="" required />
+        </div>
+    </div>
+    
+    <!-- <div class="row">
+    	<div class="col-lg-6">
+        	<label for="id-about">Giới thiệu ngắn về bạn:</label>
+        </div>
+        <div class="col-lg-6">
+        	<textarea name="gioithieu" rows="4" cols="5" required ></textarea>
+        </div>
+    </div> -->
+    
+    <button id="dangky" style="display:table; margin: auto;  margin-top: 20px;margin-bottom: 20px; background:#000; color: white; padding: 10px 30px;font-size: 30px;  font-family:SFU;"><!--<img src="image/icon-dangky.png" /> &nbsp; -->ĐĂNG KÝ</button>
+    </form>
+    </div> 
+    </div> <!--end container-->
+
+</section>
+
+<!--section 6:  buidling-->
+<section id="section6" style="position:relative" >
+	
+	<!--<img  src="image/section6-building.jpg" class="img-responsive" width="100%" style=" filter:grayscale(100%);"/>-->
+    <img style="position:absolute; z-index:5; " src="image/section6-building.jpg" class="img-responsive" width="100%" />	
+    <img src="image/section6-building.jpg" class="img-responsive" style="z-index:6" width="100%"/>
+    
+<!--
+        	<p style="position:absolute; z-index:100; bottom: 10%; left: 10%  "><a style="text-decoration:none; font-size:28px; font-family:SFU; color:white" href="#">Facebook / </a><a  style="text-decoration:none; font-size:28px; font-family:SFU; color:white" href="#">Instagram</a></p>
+      --> 
+</section>
+
+<!--
+<section id="section7"  >
+	<div class="container">
+    	<h1 class="section-title" style="margin-top:75px;">VENUE</h1>
+        <p style="color: white; font-size:16px; font-weight:bold">8 NGUYỄN BỈNH KHIÊM</p>
+        <p style="color: white; font-size:16px; font-weight:bold">QUẬN 1, TP.HCM</p>
+    </div>
+</section>
+-->
+<!--
+<div class="container"  style="position:relative;z-index: 80">
+	<div style="position:absolute; z-index:80">
+    	<h1 class="section-title wow zoomInLeft" style="margin-top:45px;">ĐỊA ĐIỂM</h1>
+        <p  class="wow fadeIn" data-wow-delay="1s" style="color: white; font-size:18px; font-weight:bold">GEM CENTER</p>
+        <p  class="wow fadeIn" data-wow-delay="1s" style="color: white; font-size:18px; font-weight:bold">8 NGUYỄN BỈNH KHIÊM, QUẬN 1, TP.HCM</p>
+		<h1 class="section-title wow zoomInLeft" style="margin-top:45px;">LIÊN HỆ</h1>
+        <p  class="wow fadeIn" data-wow-delay="1s" style="color: white; font-size:18px; font-weight:bold">Email: lienhe@romanokhoithuat.vn</p>
+        <p  class="wow fadeIn" data-wow-delay="1s" style="color: white; font-size:18px; font-weight:bold">Hotline: 0899335726</p>
+    </div>
+</div>
+
+
+<section id="section8" style="z-index:4"  >
+	
+</section>
+-->
+
+
+<div id="box-follow-1" style="position: fixed;right:20px; top:20px; z-index:88; display:none">
+ <!--  <a href="#section1" style="text-decoration:none; color:white; "><img id="btn-backtotop" src="image/btn-logo-follow.png" ></a><br />-->
+  <img id="btn-subcribe-follow" style="cursor:pointer" src="image/cover-button-2.gif" />
+   </div>
+ <div id="box-follow-2" style="position: fixed;right:40px; bottom:40px; z-index:88; display:none">  
+   <!--<img id="btn-subcribe-follow" style="cursor:pointer" src="image/btn-subcribe-follow.png" />-->
+     <a href="#section1" ><img src="image/btn-backtotop.png" />
+     </a>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script src="https://gitcdn.xyz/repo/thesmart/jquery-scrollspy/0.1.3/scrollspy.js"></script>
+<script>
+WOW.prototype.addBox = function(element) {
+    this.boxes.push(element);
+  };
+
+  // Init WOW.js and get instance
+  var wow = new WOW();
+  wow.init();
+
+  // Attach scrollSpy to .wow elements for detect view exit events,
+  // then reset elements and add again for animation
+  $('.wow').on('scrollSpy:exit', function() {
+    $(this).css({
+      'visibility': 'hidden',
+      'animation-name': 'none'
+    }).removeClass('animated');
+    wow.addBox(this);
+  }).scrollSpy();
+
+</script>
+<!--
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3Q7QPQnOTwTD1a0kAJhBbtEUocF3gqGs&callback=initializeMap"
+  type="text/javascript"></script>-->
+ <!--google analytic-->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-103612173-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!--google analytic-->
+</body>
+</html>
